@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta http-equiv="Cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>Image Quote</title>
+
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
+</head>
+
+<body>
+  <div id="header" class="container_12 clearfix">
+    <div id="logo">
+      <div><img src="http://www.muvenum.com/images/icon-quote.gif" style=" padding:1.15em 1em 0 0" /><a href="/"><strong>ImageQuote</strong></a></div>
+    </div>
+  </div>
+
+  <div id="content" class="container_12 clearfix">
+    <div class="grid_12">
+
+      <p>Need to convert some text quotes into images to display on your photo frame? Then you <a href="http://www.igvita.com/2008/06/08/tumblr-rmagick-and-a-photo-frame/">found the right tool</a>.</p>
+
+      <p>
+          To get started:
+          <ul>
+             <li>POST /quote with 'quote' and 'source'</li>
+             <li>GET /quote with 'quote' and 'source' (<a href="/quote?quote=Hello%20world&source=somesite.com">see example</a>)</li>
+             <li>Fill out the form below</li>
+          </ul>
+      </p>
+
+  <h2 id="customize">Customize quote</h2>
+  <div>
+
+    <pre>
+    <form method="post" action="/quote">
+      <label for="quote">Quote text:</label>
+      <textarea name="quote" rows="5" cols="100"/></textarea>
+
+      <label for="source">Source:</label>
+      <input type="text" name="source" size="50"/>
+      <span style="font-size:0.8em;color:#999">ex: somewebsite.com, or John Smith</span>
+
+      <input type="submit" value="Create Quote">
+    </form>
+    </pre>
+
+  </div>
+  </div>
+
+  <div id="footer" class="container_12 clearfix">
+    <div id="copy">
+      <a href="http://twitter.com/igrigorik">@igrigorik</a> / <a href="http://www.igvita.com/">igvita.com</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,4 +1,5 @@
-require 'rmagick'
+require 'rubygems'
+require 'RMagick'
 require 'rvg/rvg'
 
 include Magick
